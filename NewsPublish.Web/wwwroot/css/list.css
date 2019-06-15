@@ -1,0 +1,33 @@
+
+.ltool_menu {
+    display: table;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.ltool_menu, .left_ad {
+    float: left;
+    width: 800px
+}
+
+
+    .ltool_menu a {
+        border-bottom: 1px solid #efefef;
+        display: table;
+        width: 100%
+    }
+
+    .ltool_menu div a div {
+        text-align: left;
+        padding: 10px 10px;
+        *width: auto;
+        *margin: 0 auto;
+        *display: inline-block;
+        font-weight: normal;
+        border-bottom: 1px solid #eeeeee
+    }
+
+        .ltool_menu div a div:hover {
+            background-color: #00B7D8;
+            color: #ffffff
+        }

@@ -1,0 +1,65 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    int id = 0;
+}
+@using NewsPublish.Model.Response;
+<div class="content-wrap1">
+    <div class="content1">
+        @{
+            var response = ViewData["News"] as ResponseModel;
+            id = response.data.Id;
+            <header class="article-header">
+                <h1 class="article-title"><a href="#" title="@response.data.Title">@response.data.Title</a></h1>
+                <div class="article-meta">
+                    <span class="item article-meta-time">
+                        <time class="time" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="@response.data.PublishDate">
+                            <i class="glyphicon glyphicon-time"></i>@response.data.PublishDate
+                        </time>
+                    </span>
+                    <span class="item article-meta-category" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="" @response.data.ClassifyName>
+                        <i class="glyphicon glyphicon-list"></i>
+                        <a href="#" title="@response.data.ClassifyName"> @response.data.ClassifyName</a>
+                    </span>
+                </div>
+            </header>
+            <article class="article-content">
+                <iframe src="@response.data.Image" width="100%" height="1200px" scroll="no"></iframe>
+              
+                <p>
+                    @response.data.Contents
+                </p>
+            </article>
+        }
+
+
+
+    
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+    function addComment() {
+        var content = $("#comment-textarea").val();
+        if (content != "" && content != null) {
+            $.ajax({
+                type: 'post',
+                url: '/News/AddComment',                
+                data: { NewsId:@id,Contents:content },
+                success: function (data) {
+                    if (data.code == 200) {
+                        $("#comment-textarea").val('');
+                        var html = '<li class="comment-content"><span class="comment-f">' + data.data.floor + '</span><div class="comment-main"><p><a class="address" rel="nofollow" target="_blank">匿名</a><span class="time">(' + data.data.addTime + ')</span><br>' + data.data.Contents + '</p></div></li>';
+                        $("#comment_list").prepend(html);
+                    } else {
+                        alert(data.result);
+                    }
+                }
+
+            })
+        }
+    }
+
+</script>

@@ -1,0 +1,219 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\cgw\\Documents\\GitHub\\hb\\NewsPublish.Web\\NewsPublish.Web.csproj": {}
+  },
+  "projects": {
+    "D:\\cgw\\Documents\\GitHub\\hb\\NewsPublish.Model\\NewsPublish.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\cgw\\Documents\\GitHub\\hb\\NewsPublish.Model\\NewsPublish.Model.csproj",
+        "projectName": "NewsPublish.Model",
+        "projectPath": "D:\\cgw\\Documents\\GitHub\\hb\\NewsPublish.Model\\NewsPublish.Model.csproj",
+        "packagesPath": "C:\\Users\\cgw\\.nuget\\packages\\",
+        "outputPath": "D:\\cgw\\Documents\\GitHub\\hb\\NewsPublish.Model\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\cgw\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        }
+      }
+    },
+    "D:\\cgw\\Documents\\GitHub\\hb\\NewsPublish.Service\\NewsPublish.Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\cgw\\Documents\\GitHub\\hb\\NewsPublish.Service\\NewsPublish.Service.csproj",
+        "projectName": "NewsPublish.Service",
+        "projectPath": "D:\\cgw\\Documents\\GitHub\\hb\\NewsPublish.Service\\NewsPublish.Service.csproj",
+        "packagesPath": "C:\\Users\\cgw\\.nuget\\packages\\",
+        "outputPath": "D:\\cgw\\Documents\\GitHub\\hb\\NewsPublish.Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\cgw\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "D:\\cgw\\Documents\\GitHub\\hb\\NewsPublish.Model\\NewsPublish.Model.csproj": {
+                "projectPath": "D:\\cgw\\Documents\\GitHub\\hb\\NewsPublish.Model\\NewsPublish.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.2.4, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        }
+      }
+    },
+    "D:\\cgw\\Documents\\GitHub\\hb\\NewsPublish.Web\\NewsPublish.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\cgw\\Documents\\GitHub\\hb\\NewsPublish.Web\\NewsPublish.Web.csproj",
+        "projectName": "NewsPublish.Web",
+        "projectPath": "D:\\cgw\\Documents\\GitHub\\hb\\NewsPublish.Web\\NewsPublish.Web.csproj",
+        "packagesPath": "C:\\Users\\cgw\\.nuget\\packages\\",
+        "outputPath": "D:\\cgw\\Documents\\GitHub\\hb\\NewsPublish.Web\\obj\\publish\\win-x64\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\cgw\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "D:\\cgw\\Documents\\GitHub\\hb\\NewsPublish.Model\\NewsPublish.Model.csproj": {
+                "projectPath": "D:\\cgw\\Documents\\GitHub\\hb\\NewsPublish.Model\\NewsPublish.Model.csproj"
+              },
+              "D:\\cgw\\Documents\\GitHub\\hb\\NewsPublish.Service\\NewsPublish.Service.csproj": {
+                "projectPath": "D:\\cgw\\Documents\\GitHub\\hb\\NewsPublish.Service\\NewsPublish.Service.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.4, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Hosting": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.4, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      },
+      "runtimes": {
+        "win-x64": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
