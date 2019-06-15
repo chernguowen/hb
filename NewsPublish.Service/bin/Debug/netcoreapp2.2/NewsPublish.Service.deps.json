@@ -9,7 +9,8 @@
       "NewsPublish.Service/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "2.2.4",
-          "NewsPublish.Model": "1.0.0"
+          "NewsPublish.Model": "1.0.0",
+          "Microsoft.AspNetCore.Hosting.Abstractions": "2.2.0.0"
         },
         "runtime": {
           "NewsPublish.Service.dll": {}
@@ -505,6 +506,14 @@
         "runtime": {
           "NewsPublish.Model.dll": {}
         }
+      },
+      "Microsoft.AspNetCore.Hosting.Abstractions/2.2.0.0": {
+        "runtime": {
+          "Microsoft.AspNetCore.Hosting.Abstractions.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.18316"
+          }
+        }
       }
     }
   },
@@ -887,6 +896,11 @@
     },
     "NewsPublish.Model/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Hosting.Abstractions/2.2.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }
